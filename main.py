@@ -726,6 +726,7 @@ async def decrypt_message(req: DecryptRequest, db: Client = Depends(get_supabase
     )
 
 # --- Uvicorn Runner ---
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=3001, reload=True, log_level="info") 
+# Remove this block for Vercel deployment
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("main:app", host="0.0.0.0", port=3001, reload=True, log_level="info") 
