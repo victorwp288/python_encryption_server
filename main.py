@@ -100,7 +100,7 @@ app = FastAPI()
 # --- CORS Configuration ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Adjust for your frontend origin
+    allow_origins=["http://localhost:5173", "https://dds-secure-chat-web.vercel.app"],  # Adjust for your frontend origin
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
